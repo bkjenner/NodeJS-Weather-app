@@ -13,7 +13,7 @@ const forecast = (latitude, longitude, callback) => {
       if (data.cod) {
         callback(data.message, undefined)
       } else {
-        callback(undefined, ' It is currently ' + data.current.weather[0].description + ' with a temperature of ' + data.current.temp + ' but it feels like ' + data.current)
+        callback(undefined, ' It is currently ' + data.current.weather[0].description + ' with a temperature of ' + data.current.temp + ' but it feels like ' + data.current.feels_like)
       }
     }
   });
