@@ -6,6 +6,11 @@ const forecast = require("./utils/forecast")
  
 const app = express();
 
+// Heroku sets a port that it wants us to use.  We can access
+// that variable in process.env.PORT.  The || is like an isnull
+// If PORT is null it will set to 3000.  The || is called an OR condition
+const port = process.env.PORT || 3000
+
 // Define paths for Express config
 // Lesson 50
 // Setup static directory to serve
@@ -133,6 +138,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log("Server is up on port 3000.");
+app.listen(port, () => {
+  console.log("Server is up on port "+port);
 });

@@ -1,6 +1,7 @@
 //console.log("Client side javascript file is loaded!");
 
-// This was the first exercise.  It shows how we can make a request to
+// This was the first exercise.  It shows how we can make a request tols
+
 // a service and then display the results on the chrome console.
 // fetch("http://puzzle.mead.io/puzzle").then((response) =>
 //   response.json().then((data) => {
@@ -29,7 +30,7 @@ weatherForm.addEventListener("submit", (e) => {
 
   const location = search.value;
 
-  fetch("http://localhost:3000/weather?address=" + location).then((response) =>
+  fetch("/weather?address=" + location).then((response) =>
     // we use the name data but it could be any name we choose.
     response.json().then((data) => {
       if (data.error) {
