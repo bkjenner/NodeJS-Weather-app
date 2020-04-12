@@ -41,6 +41,17 @@ header a {
     width: 250px;
 }
 
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    width: 750px;
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
 input {
     border: 1px solid #cccccc;
     padding: 8px;
