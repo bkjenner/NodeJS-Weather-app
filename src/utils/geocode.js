@@ -1,3 +1,4 @@
+// Request allows you to connect to an external api
 const request = require("request");
 
 const geocode = (address, callback) => {

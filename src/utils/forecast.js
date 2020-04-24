@@ -1,3 +1,4 @@
+// Request allows you to connect to an external api
 const request = require('request')
 
 // 'https://api.openweathermap.org/data/2.5/onecall?lat=33.227&lon=-111.611&appid=0a8e762eb5369d72a802f6986432e41e&units=imperial'
